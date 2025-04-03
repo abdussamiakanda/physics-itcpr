@@ -1,16 +1,18 @@
 const engines = [
+    'solar-system',
+    'orbital-gravity',
+    'magnetic-fields',
+    'electric-field-visualizer',
+    // 'soap-bubbles',
+    'car-collision',
+    'launch-projectile',
     'colliding-box',
     'gravity-balls',
     'spring-system',
     'rope-chain',
     'domino-fall',
     'fluid-particles',
-    'orbital-gravity',
-    'magnetic-fields',
     'inverted-gravity',
-    'electric-field-visualizer',
-    'launch-projectile',
-    'car-collision',
 ];
 
 const select = document.getElementById('componentSelect');

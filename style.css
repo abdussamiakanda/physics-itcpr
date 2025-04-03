@@ -140,3 +140,9 @@ html, body {
         border-bottom: 1px solid #d1d1d1;
     }
 }
+
+#planetInfo {
+    margin-top: 20px;
+    font-family:monospace;
+    color: black;
+}
