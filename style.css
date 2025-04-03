@@ -1,0 +1,142 @@
+/* Basic Reset (optional but good practice) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Example professional font */
+    background-color: #f4f7f6; /* Light background for the page */
+    color: #333;
+}
+
+.app-container {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+}
+
+/* Control Panel Styling */
+.controls-panel {
+    width: 280px; /* Fixed width for the sidebar */
+    background-color: #ffffff; /* White background */
+    padding: 20px;
+    overflow-y: auto; /* Allow scrolling if content overflows */
+    border-right: 1px solid #d1d1d1; /* Subtle border */
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* Space between control sections */
+}
+
+.controls-panel h2 {
+    text-align: center;
+    color: #005a9c; /* Professional blue accent */
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.control-section h3 {
+    color: #333;
+    margin-bottom: 12px;
+    font-size: 1em;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.control-section label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+.control-section select,
+.control-section input[type="range"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.control-section button {
+    padding: 10px 15px;
+    background-color: #0078d4; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 5px;
+}
+.control-section button:hover {
+    background-color: #005a9c;
+}
+
+.file-upload-area {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+#fileName {
+    font-size: 0.8em;
+    color: #555;
+    margin-top: 10px;
+    word-wrap: break-word;
+}
+
+/* Visualization Area Styling */
+.visualization-area {
+    flex-grow: 1; /* Takes up the remaining space */
+    position: relative; /* Needed for positioning the overlay */
+    background-color: #e0e0e0; /* Placeholder background */
+    display: flex; /* To center the container if needed */
+    justify-content: center;
+    align-items: center;
+}
+
+#renderer-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Ensure canvas doesn't overflow */
+    background-color: #ffffff; /* Ensure a visible background for debugging */
+}
+
+/* Make canvas responsive within its container */
+#renderer-container canvas {
+    display: block; 
+    width: 100% !important; /* Override Three.js inline styles if needed */
+    height: 100% !important;
+}
+
+.loading-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    color: #333;
+}
+
+/* Basic responsive adjustments (optional) */
+@media (max-width: 768px) {
+    .app-container {
+        flex-direction: column;
+    }
+    .controls-panel {
+        width: 100%;
+        height: auto; /* Adjust height automatically */
+        max-height: 40vh; /* Limit height */
+        border-right: none;
+        border-bottom: 1px solid #d1d1d1;
+    }
+}

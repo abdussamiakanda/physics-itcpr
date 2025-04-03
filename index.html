@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics Engines - ITCPR</title>
+    <link rel="shortcut icon" href="https://portal.itcpr.org/assets/logo.png">
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <div class="app-container">
+        
+        <aside class="controls-panel">
+            <h2>Physics Engine</h2>
+            
+            <div class="control-section">
+                <h3>Choose Physics Engine</h3>
+                <select id="componentSelect">
+                </select>
+            </div>
+
+            <!-- <div class="control-section">
+                <h3>Control Panel</h3>
+                <div id="file-upload-area">
+                    <p>Drag & Drop OVF File or Click</p>
+                    <input type="file" id="fileInput" accept=".ovf" style="display: none;"> 
+                    <button id="browseButton">Browse Files</button>
+                </div>
+                <div id="fileName">No file loaded.</div>
+            </div> -->
+
+            <div class="control-section">
+                <h3>Control Panel</h3>
+                <div id="control"></div>
+            </div>
+
+        </aside>
+
+        <main class="visualization-area">
+            <div id="renderer-container"></div>
+            <div class="loading-overlay" id="loadingOverlay" style="display: none;">
+                Loading...
+            </div>
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
