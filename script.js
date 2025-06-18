@@ -3,6 +3,7 @@ const engines = [
     'orbital-gravity',
     'magnetic-fields',
     'electric-field-visualizer',
+    'two-balls',
     // 'soap-bubbles',
     'car-collision',
     'launch-projectile',
