@@ -1,4 +1,5 @@
 const engines = [
+    'stern-gerlach',
     'solar-system',
     'orbital-gravity',
     'magnetic-fields',
