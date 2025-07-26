@@ -1,5 +1,7 @@
 const engines = [
+    // 'double-slit-experiment',
     'stern-gerlach',
+    'skyrmion-visualizer',
     'solar-system',
     'orbital-gravity',
     'magnetic-fields',
