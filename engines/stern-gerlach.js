@@ -139,7 +139,7 @@
       <button id="emit-positive">Emit +</button>
       <button id="emit-negative">Emit –</button>
       <button id="clear">Clear</button><br><br>
-      <label>Magnetic Force Strength: <input type="range" min="0.00000001" max="0.00000003" step="0.000000001" value="${magneticForceStrength}" id="fieldSlider"></label>
+      <label>Magnetic Force Strength: <input type="range" min="0.000000001" max="0.00000001" step="0.000000001" value="${magneticForceStrength}" id="fieldSlider"></label>
     `;
 
     document.getElementById('emit-positive').onclick = () => emitParticle(1);
